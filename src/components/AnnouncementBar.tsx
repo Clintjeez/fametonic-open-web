@@ -15,10 +15,7 @@ const AnnouncementBar: React.FC<AnnouncementProps> = ({
   link,
 }) => {
   return (
-    <div
-      className='bg-gradient-to-r from-[#FC004E] to-[#00E7F9] py-2 px-4 text-center'
-      role='banner'
-    >
+    <div className='bar-bg-gradient py-2 px-4 text-center' role='banner'>
       <p className='text-white text-sm md:text-base font-medium'>
         <span className='text-[#00E7F9]'>{title}</span>
         <span>{message}</span>
