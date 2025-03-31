@@ -4,7 +4,7 @@ Turn your social media presence into a thriving career with Fametonic - your all
 
 ![Fametonic Screenshot](public/Fametonic-screenshot.png)
 
-[View Live Demo](https://fametonic.vercel.app) <!-- Replace with actual deployed URL -->
+[View Live Demo](https://fametonic-open-web-m93z.vercel.app/) 
 
 ## 🚀 Features
 
@@ -28,7 +28,7 @@ Turn your social media presence into a thriving career with Fametonic - your all
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/fametonic.git
+   git clone https://github.com/Clintjeez/fametonic-open-web.git
    cd fametonic
    ```
 
