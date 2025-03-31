@@ -1,33 +1,33 @@
+import { Figtree, Urbanist } from 'next/font/google';
 import type { Metadata } from 'next';
-import { Urbanist, Figtree } from 'next/font/google';
-
 import './globals.css';
 
-const urbanist = Urbanist({
-  variable: '--font-urbanist',
+const figtree = Figtree({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-figtree',
 });
 
-const figtree = Figtree({
-  variable: '--font-figtree',
+const urbanist = Urbanist({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-urbanist',
 });
 
 export const metadata: Metadata = {
-  title: 'Fametonic',
-  description: 'Discover your way to success with Fametonic',
+  title: 'Fametonic - Turn Social Media Into a Career',
+  description:
+    'Start your journey to becoming a successful social media influencer with Fametonic.',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang='en'>
-      <body className={`${urbanist.variable} ${figtree.variable} antialiased`}>
-        {children}
-      </body>
+    <html lang='en' className={`${figtree.variable} ${urbanist.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

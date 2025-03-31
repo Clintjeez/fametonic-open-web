@@ -1,15 +1,37 @@
 import React from 'react';
 
-const AnnouncementBar = () => {
+type AnnouncementProps = {
+  title?: string;
+  message?: string;
+  link?: {
+    href: string;
+    label: string;
+  };
+};
+
+const AnnouncementBar: React.FC<AnnouncementProps> = ({
+  title,
+  message,
+  link,
+}) => {
   return (
-    <div className='bar-bg-gradient py-2 px-4'>
-      <h1 className='text-[14px] md:text-[20px] font-bold md:font-extrabold text-center'>
-        🚀{' '}
-        <span className='text-[#00E7F9] text-[16px] md:text-[22px]'>
-          FRESH BEGINNINGS SALE:
-        </span>{' '}
-        Extra 25% OFF, Limited Spots - start your journey today!
-      </h1>
+    <div
+      className='bg-gradient-to-r from-[#FC004E] to-[#00E7F9] py-2 px-4 text-center'
+      role='banner'
+    >
+      <p className='text-white text-sm md:text-base font-medium'>
+        <span className='text-[#00E7F9]'>{title}</span>
+        <span>{message}</span>
+        {link && (
+          <a
+            href={link.href}
+            className='ml-2 underline hover:text-[#010101] transition-colors duration-300'
+            aria-label={`${link.label} - ${message}`}
+          >
+            {link.label}
+          </a>
+        )}
+      </p>
     </div>
   );
 };

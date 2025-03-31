@@ -1,12 +1,20 @@
 import AnnouncementBar from '@/components/AnnouncementBar';
+import HeroSection from '@/components/HeroSection';
 import NavBar from '@/components/NavBar';
-import Image from 'next/image';
 
 export default function Home() {
   return (
-    <section>
-      <AnnouncementBar />
+    <>
+      <AnnouncementBar
+        title='FRESH BEGINNINGS SALE: '
+        message='Extra 25% OFF, Limited Spots - '
+        link={{
+          href: '#',
+          label: 'start your journey today!',
+        }}
+      />
       <NavBar />
-    </section>
+      <HeroSection />
+    </>
   );
 }
