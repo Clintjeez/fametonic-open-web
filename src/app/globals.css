@@ -1,11 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Base styles */
 @layer base {
   body {
-    @apply bg-[#010101] font-figtree min-h-screen antialiased;
+    @apply bg-[#010101] min-h-screen;
+    font-family: var(--font-figtree);
   }
 
   /* Apply Urbanist to all headings */
@@ -15,7 +14,7 @@
   h4,
   h5,
   h6 {
-    @apply font-urbanist;
+    font-family: var(--font-urbanist);
   }
 }
 

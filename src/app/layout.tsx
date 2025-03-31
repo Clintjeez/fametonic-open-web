@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${figtree.variable} ${urbanist.variable}`}>
-      <body>{children}</body>
+      <body className='bg-[#010101] min-h-screen antialiased'>{children}</body>
     </html>
   );
 }
