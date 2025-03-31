@@ -15,12 +15,12 @@ type NavLink = {
 const NAV_LINKS: NavLink[] = [
   {
     id: 'about',
-    href: '#about',
+    href: '#',
     label: 'About us',
   },
   {
     id: 'contact',
-    href: '#contact',
+    href: '#',
     label: 'Contact',
   },
 ] as const;

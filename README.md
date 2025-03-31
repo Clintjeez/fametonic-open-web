@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fametonic 🌟
 
-## Getting Started
+Turn your social media presence into a thriving career with Fametonic - your all-in-one platform for influencer growth and monetization.
 
-First, run the development server:
+![Fametonic Screenshot](public/Fametonic-screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[View Live Demo](https://fametonic.vercel.app) <!-- Replace with actual deployed URL -->
+
+## 🚀 Features
+
+- **Modern UI/UX**: Built with a beautiful, responsive design using Tailwind CSS
+- **Performance Optimized**: Leverages Next.js 14's latest features for optimal performance
+- **Typography**: Custom font implementation using Figtree and Urbanist from Google Fonts
+- **Animations**: Smooth, custom animations for enhanced user experience
+- **Mobile Responsive**: Fully responsive design that works on all devices
+- **TypeScript**: Built with TypeScript for better type safety and developer experience
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: Google Fonts (Figtree, Urbanist)
+- **Language**: TypeScript
+- **Development**: ESLint, Prettier
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/fametonic.git
+   cd fametonic
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/                # Next.js app directory
+│   ├── layout.tsx     # Root layout component
+│   ├── page.tsx       # Home page
+│   └── globals.css    # Global styles
+├── components/        # Reusable components
+└── styles/           # Additional styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project is configured for easy deployment on Vercel:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Deploy with a single click
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Fonts
+The project uses two main fonts:
+- **Figtree**: Primary font for body text
+- **Urbanist**: Used for headings
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can modify the font configuration in `src/app/layout.tsx` and `tailwind.config.js`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Colors
+The color scheme can be customized in `tailwind.config.js`. The current theme includes:
+- Primary gradient: `#FC004E` to `#10CBE0`
+- Background: `#010101`
 
-## Deploy on Vercel
+## 🧪 Running Tests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run test
+# or
+yarn test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+---
+
+Built with ❤️ by [Clinton James]
